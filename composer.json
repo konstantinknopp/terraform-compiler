@@ -1,0 +1,32 @@
+{
+  "name": "avenity/terraform-compiler",
+  "description": "Compiler to create terraform files with php",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Avenity\\TerraformCompiler\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Avenity\\TerraformCompiler\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Konstantin Knopp",
+      "email": "k.knopp@das-unikat.com"
+    }
+  ],
+  "require-dev": {
+    "orchestra/testbench": "^8.22",
+    "phpunit/phpunit": "^10.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Avenity\\TerraformCompiler\\TerraformPackageServiceProvider"
+      ]
+    }
+  }
+}
